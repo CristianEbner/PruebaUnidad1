@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/giwallpaper"
+    tools:context=".RadioButton">
+
+    <TextView
+        android:id="@+id/tv_opcion"
+        android:layout_width="281dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="Selecciona una opcion"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="197dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_opcion"/>
+
+    <RadioButton
+            android:id="@+id/rb_masculino"
+            android:layout_width="168dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="22dp"
+            android:text="Masculino"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_opcion" />
+
+            <RadioButton
+        android:id="@+id/rb_femenino"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:text="Femenino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_masculino" />
+
+    <Button
+        android:id="@+id/btn_validar1"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="83dp"
+        android:onClick="onClickbutton"
+        android:text="Validar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_femenino" />
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="93dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="104dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_validar1"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="btn_uno">1</string>
+    <string name="btn_dos">2</string>
+    <string name="btn_tres">3</string>
+    <string name="btn_cuatro">4</string>
+    <string name="btn_cinco">5</string>
+    <string name="btn_seis">6</string>
+    <string name="btn_siete">7</string>
+    <string name="btn_ocho">8</string>
+    <string name="btn_nueve">9</string>
+    <string name="btn_sum">+</string>
+    <string name="btn_cero">0</string>
+    <string name="btn_res">-</string>
+    <string name="btn_multi">*</string>
+    <string name="btn_resul">=</string>
+    <string name="btn_div">/</string>
+    <string name="btn_limpiar">AC</string>
+    <string name="tv_cero">0</string>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOpciones">
+
+    <TextView
+        android:id="@+id/tv_seleccion"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:text="Selecione un CheckBox"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_opcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:text="Opcion 1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seleccion" />
+
+    <CheckBox
+        android:id="@+id/cb_opcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Opcion 2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_opcion1" />
+
+    <Button
+        android:id="@+id/btn_validar"
+        android:layout_width="194dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:onClick="btn_Validar"
+        android:text="Validar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_opcion2" />
+
+    <TextView
+        android:id="@+id/tv_calificar"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Califique"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_validar" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calificar" />
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

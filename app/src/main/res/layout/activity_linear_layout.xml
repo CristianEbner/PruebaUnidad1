@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".LinearLayout">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F44336"
+        android:layout_weight="2"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#E91E63"
+        android:layout_weight="3"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#9C27B0"
+        android:layout_weight="4"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#673AB7"
+        android:layout_weight="5"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#3F5185"
+            android:layout_weight="2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#2196F3"
+            android:layout_weight="3"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#009688"
+            android:layout_weight="4"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#4CAF50"
+            android:layout_weight="5"/>
+
+        <ImageButton
+            android:id="@+id/ibtnMenu"
+            android:onClick="menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            android:contentDescription="Menu"/>
+
+    </LinearLayout>
+
+</LinearLayout>

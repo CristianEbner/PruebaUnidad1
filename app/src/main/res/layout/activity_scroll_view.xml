@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollView">
+
+    <ScrollView
+        android:layout_width="379dp"
+        android:layout_height="727dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibVerano"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="Seleccion"
+                android:background="@color/material_dynamic_neutral0"
+                android:contentDescription="Evento de Verano"
+                android:src="@mipmap/gimage1" />
+
+            <ImageButton
+                android:id="@+id/ibAmbleklee"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="Seleccion"
+                android:background="@color/material_dynamic_neutral0"
+                android:contentDescription="Amber y Klee"
+                android:src="@mipmap/gimage2"
+                />
+            <ImageButton
+                android:id="@+id/ibInazuma"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="Seleccion"
+                android:background="@color/material_dynamic_neutral0"
+                android:contentDescription="Inazuma"
+                android:src="@mipmap/gimage3"
+                />
+
+            <ImageButton
+                android:id="@+id/ibEvento"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="Seleccion"
+                android:background="@color/material_dynamic_neutral0"
+                android:contentDescription="Evento"
+                android:src="@mipmap/gimage4" />
+
+            <ImageButton
+                android:id="@+id/ibXiangling"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="Seleccion"
+                android:background="@color/material_dynamic_neutral0"
+                android:contentDescription="Xiangling"
+                android:src="@mipmap/gimage5"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="104dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/giwallpaper"
+    tools:context=".RecyclerScroll">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_st" />
+
+    <Button
+        android:id="@+id/btn_scrollView"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="51dp"
+        android:text="ScrollView"
+        android:onClick="ScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_Recycler"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="44dp"
+        android:onClick="Recycler"
+        android:text="Recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scrollView" />
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="93dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="64dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Recycler"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

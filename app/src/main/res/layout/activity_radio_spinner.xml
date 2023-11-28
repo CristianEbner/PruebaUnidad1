@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/giwallpaper"
+    tools:context=".CheckBoxProgressBar">
+
+
+    <Button
+        android:id="@+id/btn_radioButton"
+        android:layout_width="199dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:onClick="Opciones"
+        android:text="RadioButton"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_st" />
+
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="187dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="36dp"
+        android:onClick="Operacion"
+        android:text="Spinner"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_radioButton"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_radioButton" />
+
+    <ImageView
+        android:id="@+id/iv_st"
+        android:layout_width="165dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bienvenido"
+        app:srcCompat="@mipmap/logo_st" />
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="93dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_spinner"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/tv_bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

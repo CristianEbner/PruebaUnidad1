@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/giwallpaper"
+    tools:context=".TableLayout">
+
+
+    <TableLayout
+        android:id="@id/TableLayout"
+        android:layout_width="358dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cero">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_uno"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:onClick="Uno"
+                android:text="@string/btn_uno" />
+
+            <Button
+                android:id="@+id/btn_dos"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Dos"
+                android:text="@string/btn_dos" />
+
+            <Button
+                android:id="@+id/btn_tres"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Tres"
+                android:text="@string/btn_tres" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_cuatro"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Cuatro"
+                android:text="@string/btn_cuatro" />
+
+            <Button
+                android:id="@+id/btn_cinco"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Cinco"
+                android:text="@string/btn_cinco" />
+
+            <Button
+                android:id="@+id/btn_seis"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Seis"
+                android:text="@string/btn_seis" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_siete"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Siete"
+                android:text="@string/btn_siete" />
+
+            <Button
+                android:id="@+id/btn_ocho"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Ocho"
+                android:text="@string/btn_ocho" />
+
+            <Button
+                android:id="@+id/btn_nueve"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Nueve"
+                android:text="@string/btn_nueve" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_sum"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Mas"
+                android:text="@string/btn_sum" />
+
+            <Button
+                android:id="@+id/btn_cero"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Cero"
+                android:text="@string/btn_cero" />
+
+            <Button
+                android:id="@+id/btn_res"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Menos"
+                android:text="@string/btn_res" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_multi"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Multiplicar"
+                android:text="@string/btn_multi" />
+
+            <Button
+                android:id="@+id/btn_resul"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Resultado"
+                android:text="@string/btn_resul" />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="Dividir"
+                android:text="@string/btn_div" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_limpiar"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:onClick="Restaurar"
+                android:text="@string/btn_limpiar" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_cero"
+        android:layout_width="99dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/tv_cero"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="368dp"
+        android:layout_weight="1"
+        android:contentDescription="Menu"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
